@@ -14,6 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/admin', function () {
-  return view('Admin.chartline');
-});
+//Route::get('/admin', function () {
+//  return view('Admin.chartline');
+//});
+//Route::get('/admin/chartline','ChartLineController@chart');
+Route::get('/admin', 'ChartLineController@chartline');
